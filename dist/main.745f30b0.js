@@ -121,12 +121,16 @@ var simplifyUrl = function simplifyUrl(url) {
   return url.replace("http://", "").replace("https://", "").replace("www.", "").replace(".com", "").replace(".cn", "").replace(".net", "").replace(/\/.*/, "");
 };
 var hashMap = xObject || [{
-  logo: "A",
-  url: "https://www.acfun.cn",
+  logo: "I",
+  url: "https://www.iconfont.cn/",
   background: "rgb(177,12,75)"
 }, {
+  logo: "G",
+  url: "https://www.google.com",
+  background: "rgb(74,57,140)"
+}, {
   logo: "B",
-  url: "https://www.bilibili.com",
+  url: "https://www.bootcdn.cn/",
   background: "rgb(74,57,140)"
 }];
 var render = function render() {
@@ -170,4 +174,4 @@ $(document).on("keypress", function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.2af2fae2.map
+//# sourceMappingURL=main.745f30b0.map

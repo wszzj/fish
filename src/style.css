@@ -30,6 +30,17 @@ body {
     background: #eee;
 }
 
+
+
+@media(min-width:500px) {
+    body {
+        width: 100vw;
+        height: 100xh;
+        background-image: url(../images/background-picture.png);
+    }
+}
+
+
 .allHeader {
 
     margin: 0 35px;
@@ -178,7 +189,7 @@ body {
 }
 
 .siteList .site .link {
-
+    color: #fff;
     font-size: 16px;
     margin-top: 4px;
 }

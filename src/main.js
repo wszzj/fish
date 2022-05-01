@@ -23,13 +23,18 @@ const simplifyUrl = (url) => {
 };
 let hashMap = xObject || [
   {
-    logo: "A",
-    url: "https://www.acfun.cn",
+    logo: "I",
+    url: "https://www.iconfont.cn/",
     background: "rgb(177,12,75)",
   },
   {
+    logo: "G",
+    url: "https://www.google.com",
+    background: "rgb(74,57,140)",
+  },
+  {
     logo: "B",
-    url: "https://www.bilibili.com",
+    url: "https://www.bootcdn.cn/",
     background: "rgb(74,57,140)",
   },
 ];
