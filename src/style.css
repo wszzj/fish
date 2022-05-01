@@ -189,9 +189,15 @@ body {
 }
 
 .siteList .site .link {
-    color: #fff;
+
     font-size: 16px;
     margin-top: 4px;
+}
+
+@media(min-width:500px) {
+    .siteList .site .link {
+        color: #fff;
+    }
 }
 
 .siteList .site .close .icon {
