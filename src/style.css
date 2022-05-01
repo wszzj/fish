@@ -37,6 +37,12 @@ body {
     flex-direction: column;
 }
 
+@media(min-width:500px) {
+    .allHeader {
+        margin-bottom: 100px;
+    }
+}
+
 .allHeader .headerLogo {
     display: flex;
     justify-content: center;
@@ -55,6 +61,14 @@ body {
     position: relative;
     display: flex;
 
+}
+
+@media (min-width:500px) {
+    .allHeader .search {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .allHeader .search input {
@@ -87,38 +101,69 @@ body {
 
 }
 
-
-
-
-
-
+.allMain {
+    max-width: 352px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .allMain .siteList {
-    margin: auto 40px;
+    margin-left: -10px;
+    margin-right: -20px;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
+}
+
+
+.allMain {}
+
+@media(min-width:500px) {
+    .allMain {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .allMain .siteList {
+
+        margin-left: 0;
+        margin-right: -136px;
+
+    }
 }
 
 .siteList li {
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 10px;
 }
 
-.siteList .site {
+@media(min-width:500px) {
+    .siteList li {
+        margin-left: 68px;
+        margin-right: 68px;
+    }
+}
 
+.siteList .site {
     width: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     position: relative;
 }
 
-.siteList .site .logo {
+@media(min-width:500px) {
+    .siteList .site {
+        margin-bottom: 50px;
+    }
+}
 
+
+.siteList .site .logo {
     width: 64px;
     height: 64px;
     font-size: 40px;
@@ -126,11 +171,10 @@ body {
     justify-content: center;
     align-items: center;
     background: black;
-    border-radius: 32px;
+    border-radius: 10px;
     color: #fff;
     padding: 10px;
-
-
+    cursor: pointer;
 }
 
 .siteList .site .link {
@@ -139,17 +183,26 @@ body {
     margin-top: 4px;
 }
 
-.siteList .site .close {
+.siteList .site .close .icon {
 
-    width: 10px;
+    width: 15px;
     position: absolute;
     top: 0;
-    right: 0;
-    /* top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    display: none; */
+    right: 2px;
+
 }
+
+@media(min-width:500px) {
+    .siteList .site .close .icon {
+        display: none;
+    }
+
+    .siteList .site:hover .close .icon {
+        display: block;
+    }
+
+}
+
 
 .siteList .add {
     width: 64px;

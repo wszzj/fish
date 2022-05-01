@@ -79,3 +79,11 @@ window.onbeforeunload = () => {
   const string = JSON.stringify(hashMap);
   window.localStorage.setItem("x", string);
 };
+$(document).on("keypress", (e) => {
+  const keyBoard = e.key;
+  for (let i = 0; i < hashMap.length; i++) {
+    if (hashMap[i].logo.toLowerCase() === keyBoard) {
+      window.open(hashMap[i].url);
+    }
+  }
+});
