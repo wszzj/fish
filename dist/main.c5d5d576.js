@@ -173,5 +173,9 @@ $(document).on("keypress", function (e) {
     }
   }
 });
+$(".search").keypress(function (e) {
+  console.log("hi");
+  e.stopPropagation();
+});
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.745f30b0.map
+//# sourceMappingURL=main.c5d5d576.map

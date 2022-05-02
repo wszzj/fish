@@ -92,3 +92,7 @@ $(document).on("keypress", (e) => {
     }
   }
 });
+$(".search").keypress((e) => {
+  console.log("hi");
+  e.stopPropagation();
+});
